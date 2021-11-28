@@ -1,0 +1,403 @@
+/* inter-100 - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    src: local(''),
+         url('../fonts/inter-v7-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v7-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* inter-300 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/inter-v7-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v7-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* inter-200 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    src: local(''),
+         url('../fonts/inter-v7-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v7-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* inter-regular - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/inter-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* inter-500 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/inter-v7-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v7-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* inter-600 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/inter-v7-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v7-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* inter-700 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/inter-v7-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v7-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* inter-800 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/inter-v7-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v7-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* inter-900 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/inter-v7-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v7-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* Чтобы паддингли расчитывались внутырь блока и не влияли на его ширину */
+html{
+      box-sizing: border-box;
+}
+/* Соответственно наследование для этого */
+*, *::before, *::after{
+      box-sizing: inherit;
+}
+
+body{
+     font-family: 'Inter';
+     font-style: normal;
+     font-size: 18px;
+     line-height: 1.2;
+     font-weight: normal;
+     color: #6B7280;
+}
+
+/* Header */
+
+.header{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding-top: 87px;
+     background-color: white;
+}
+
+.main_wrapper{
+     max-width: 1180px;
+     margin: 0 auto;
+}
+
+.header_wrapper{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+} 
+
+.header_list{
+     display: flex;
+     flex-wrap: wrap; 
+}
+
+.header_item{
+     margin-right: 80px;
+     padding-top: 12px;
+}
+
+.header_link{
+     font-size: 18px;
+     line-height: 28px;
+     color: #6B7280;
+     text-decoration: none;
+}
+
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: .75; 
+}
+
+.header_hire_button{
+     border: solid;
+     border-width: 1px;
+     padding: 12px 32px;
+     color: #3730A3;
+     background-color: white;
+     font-size: 18px;
+     text-decoration: none;
+     border-radius: 6px;
+}
+
+.header_hire_button:hover{
+     background-color: #3730A3;
+     color: white;
+}
+
+/* First body block */
+
+.main{
+     height: 100vh;
+     padding-top: 338px; 
+}
+
+.information{
+     padding-top: 20px; 
+}
+
+
+.intro_wrapper{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+.intro_pretitle{ 
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 28px;
+     color:  #4338CA;
+     margin-bottom: 40px;
+} 
+
+.intro_pretitle::before{
+     content: "";
+     display: inline-block;
+     width: 102px;
+     height: 1px; 
+     vertical-align: middle;
+     background-color: #4338CA;
+     margin-right: 10px;
+}
+
+.intro_title{
+     max-width: 596px;
+     font-weight: 700;
+     font-size: 72px;
+     line-height: 72px;
+     color:  black;
+     margin-bottom: 40px;
+}
+
+.intro_text{
+     max-width: 553px;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 28px;
+     color:  #6B7280;
+     margin-bottom: 52px;
+}
+
+.intro_button_wrapper{
+     display: flex;
+     flex-wrap: wrap;
+     margin-bottom: 20px;
+}
+
+.main_hire_button{
+     border: solid;
+     border-width: 1px;
+     padding: 12px 32px;
+     background-color:#3730A3;
+     color: white;
+     font-size: 18px;
+     text-decoration: none;
+     border-radius: 6px;
+     margin-right: 20px;
+}
+
+.main_hire_button:hover{
+     background-color: white;
+     color: #3730A3;
+}
+
+.main_readMore_button{
+     border: solid;
+     border-width: 1px;
+     padding: 12px 32px;
+     background-color:white;
+     color: #3730A3;
+     font-size: 18px;
+     text-decoration: none;
+     border-radius: 6px;
+}
+
+.main_readMore_button:hover{
+     background-color: #3730A3;
+     color: white;
+}
+
+.intro_comment_line{
+     border: none;
+     height: 1px;
+     margin-left: 0px;
+     width: 622px;
+     color: #000000;
+     margin-bottom: 20px;
+     background-color: #e3e6ec;
+     margin-bottom: 20px;
+}
+
+.intro_comment{
+     max-width: 553px;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 28px;
+     color:  #6B7280;
+}
+
+.intro{
+     padding-bottom: 198px;
+}
+
+/* Second body block */
+
+.services_wrapper{
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.services_title{
+     text-align: center;
+     color: black;
+     max-width: 1039px;
+     font-weight: 600;
+     font-size: 48px;
+     line-height: 48px;
+     margin: auto;
+     padding-bottom: 150px;
+     
+}
+
+.highlite{
+     color: #3730A3;
+}
+
+.service_photo{
+     padding-right: 50px;
+}
+
+.first_service{
+     padding-top: 45px;
+     padding-right: 68px;
+}
+
+.web_design_header{
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 28px;
+     color:  #1F2937;
+     padding-bottom: 20px;
+}
+
+.web_design_description{
+     max-width: 311px;
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 16px;
+     color:  #6B7280;
+     padding-bottom: 20px;
+}
+
+.web_design_ref{
+     font-weight: 500;
+     font-size: 12px;
+     line-height: 16px;
+     color:  #3730A3;
+     padding-right: 8.33px;
+}
+
+.service_ref{
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.service_link{
+     text-decoration: none;
+     display:inline-block;
+     margin-bottom: 68px;
+}
+
+.second_service{
+     padding-top: 45px;
+}
+
+.services{
+     padding-bottom: 150px;
+}
+
+/* Third body block */
+
+.main_brands_wrapper{
+     max-width: 1439px;
+     margin: 0 auto;
+
+}
+
+.brands_wrapper{
+     height: 299px;
+     background-color: #FEF2F2;
+     padding-top: 100px;
+     padding-left: 127px;
+}
+
+.trusted_by{
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 28px;
+     color:  #9CA3AF;
+     padding-bottom: 27.98px;
+}
+
+.brand_pics_wrapper{
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.aplphabet_pic{
+     padding-left: 0.55px;
+     padding-right: 96.92px;
+}
+ 
+.shopify_pic{
+     padding-right: 97px;
+}
+
+.amazon_pic{
+     padding-right: 97.24px;
+}
+
+.google_pic{
+     padding-right: 97.55px;
+}
